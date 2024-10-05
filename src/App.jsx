@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import LanguageSwitcher from './components/LanguageSwitcher';
+import LanguageSwitcher from './components/LanguageSwitcher.jsx';
 
 const App = () => {
     const {t} = useTranslation();
