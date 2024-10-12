@@ -29,6 +29,9 @@ jobs:
           node-version: "18"
           cache: "npm"
 
+      - name: Clean previous build
+        run: npm run clean || rm -rf ./dist
+
       - name: Install dependencies
         run: npm install
 
