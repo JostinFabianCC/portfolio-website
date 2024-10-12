@@ -1,6 +1,11 @@
 {
   "welcome": "Benvingut al meu portafoli",
-  "about": "Sobre Mi",
+  "about": "Sobre mi",
   "projects": "Projectes",
-  "contact": "Contacte"
+  "contact": "Contacte",
+  "language": {
+    "english": "Anglès",
+    "spanish": "Espanyol",
+    "catalan": "Català"
+  }
 }

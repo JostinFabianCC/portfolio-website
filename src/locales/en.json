@@ -2,5 +2,10 @@
   "welcome": "Welcome to my portfolio",
   "about": "About Me",
   "projects": "Projects",
-  "contact": "Contact"
+  "contact": "Contact",
+  "language": {
+    "english": "English",
+    "spanish": "Spanish",
+    "catalan": "Catalan"
+  }
 }
