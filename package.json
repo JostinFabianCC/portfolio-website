@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "cache:clear": "rm -rf node_modules/.vite"
   },
   "dependencies": {
     "i18next": "^23.15.2",
