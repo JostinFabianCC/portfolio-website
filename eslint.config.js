@@ -10,6 +10,7 @@ import pluginUnusedImports from "eslint-plugin-unused-imports";
 export default [
     {
         files: ["**/*.{js,mjs,cjs,jsx}"],
+        ignores: ["node_modules", "dist", "build", "out", ".next", ".vite", ".nuxt"],
         languageOptions: {
             ecmaVersion: 2021,
             sourceType: "module",
