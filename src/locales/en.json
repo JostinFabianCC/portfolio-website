@@ -1,11 +1,79 @@
 {
   "welcome": "Welcome to my portfolio",
-  "about": "About Me",
-  "projects": "Projects",
-  "contact": "Contact",
+  "header": {
+    "greeting": "Hi, I'm Jostin Fabian",
+    "description": "Full Stack Developer passionate about building amazing web applications.",
+    "imageAlt": "Profile Header Placeholder"
+  },
   "language": {
     "english": "English",
     "spanish": "Spanish",
     "catalan": "Catalan"
+  },
+  "navbar": {
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "experience": "Experience"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a Full Stack Developer with a passion for creating and developing web applications. I have experience in both front-end and back-end technologies, and I am always looking to learn new things. I am a team player and I enjoy working with others to achieve a common goal. I am currently looking for new opportunities to grow and develop my skills."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I have worked on. Click on the project to see more details."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "If you would like to get in touch with me, please fill out the form below and I will get back to you as soon as possible."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Here is a summary of my work experience. Click on the company name to see more details.",
+    "list": [
+      {
+        "company": "Company A",
+        "role": "Full Stack Developer",
+        "date": "Jan 2020 - Present",
+        "description": "Worked on various projects in the tech industry...",
+        "responsibilities": "Led the development of key features for several web applications.",
+        "technologies": "JavaScript, React, Node.js, MongoDB"
+      },
+      {
+        "company": "Company B",
+        "role": "Backend Developer",
+        "date": "Jun 2018 - Dec 2019",
+        "description": "Developed microservices and optimized performance.",
+        "responsibilities": "Built and maintained APIs and services for large-scale applications.",
+        "technologies": "Node.js, Express, Docker, PostgreSQL"
+      }
+    ]
+  },
+  "footer": {
+    "text": "©2024 by Portfolio. Proudly created with React."
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "error": {
+    "name": "Name is required",
+    "email": "Email is required",
+    "emailFormat": "Email is not valid",
+    "message": "Message is required"
+  },
+  "project": {
+    "title": "Title",
+    "description": "Description",
+    "technologies": "Technologies",
+    "link": "Link",
+    "github": "Github"
+  },
+  "experienceDetail": {
+    "responsibilities": "Responsibilities",
+    "technologies": "Technologies"
   }
 }
