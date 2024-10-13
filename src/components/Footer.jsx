@@ -3,23 +3,53 @@ import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {useTranslation} from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 
+// Componente para enlaces de redes sociales
+const SocialLink = ({href, icon, label}) => (
+    <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={label}
+        className="text-white hover:text-blue-400 transition-colors duration-300"
+    >
+        <FontAwesomeIcon icon={icon} className="h-6 w-6"/>
+    </a>
+);
+
 const Footer = () => {
     const {t} = useTranslation();
 
     return (
-        <footer className="py-8 bg-gray-900 text-white text-center">
-            <p>{t('footer.text')}</p>
+        <footer className="py-8 bg-gray-900 text-white">
+            <div className="max-w-7xl mx-auto px-4">
+                {/* Texto del footer */}
+                <div className="text-center">
+                    <p className="text-sm md:text-base">{t('footer.text')}</p>
+                </div>
 
-            <div className="flex justify-center space-x-6 mt-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} className="h-6 w-6 hover:text-blue-400"/>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6 hover:text-blue-400"/>
-                </a>
-            </div>
-            <div className="mt-4">
-                <LanguageSwitcher/>
+                {/* Íconos de redes sociales */}
+                <div className="flex justify-center space-x-6 mt-6">
+                    <SocialLink
+                        href="https://github.com"
+                        icon={faGithub}
+                        label="GitHub"
+                    />
+                    <SocialLink
+                        href="https://linkedin.com"
+                        icon={faLinkedin}
+                        label="LinkedIn"
+                    />
+                </div>
+
+                {/* Cambiador de idioma */}
+                <div className="mt-6 flex justify-center">
+                    <LanguageSwitcher/>
+                </div>
+
+                {/* Derechos de autor */}
+                <div className="mt-8 text-center text-sm opacity-75">
+                    <p>&copy; {new Date().getFullYear()} Your Name. {t('footer.rights')}</p>
+                </div>
             </div>
         </footer>
     );
