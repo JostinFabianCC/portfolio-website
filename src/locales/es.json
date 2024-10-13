@@ -1,11 +1,79 @@
 {
   "welcome": "Bienvenido a mi portafolio",
-  "about": "Sobre mí",
-  "projects": "Proyectos",
-  "contact": "Contacto",
+  "header": {
+    "greeting": "Hola, soy Jostin Fabian",
+    "description": "Desarrollador Full Stack apasionado por construir aplicaciones web increíbles.",
+    "imageAlt": "Imagen del encabezado de perfil"
+  },
   "language": {
     "english": "Inglés",
     "spanish": "Español",
     "catalan": "Catalán"
+  },
+  "navbar": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "experience": "Experiencia"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador Full Stack con pasión por crear y desarrollar aplicaciones web. Tengo experiencia tanto en tecnologías front-end como back-end, y siempre estoy buscando aprender cosas nuevas. Disfruto trabajar en equipo y colaborar con otros para alcanzar un objetivo común. Actualmente estoy buscando nuevas oportunidades para crecer y desarrollar mis habilidades."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Aquí están algunos de los proyectos en los que he trabajado. Haz clic en el proyecto para ver más detalles."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Si deseas ponerte en contacto conmigo, por favor llena el formulario a continuación y te responderé lo antes posible."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "description": "Aquí hay un resumen de mi experiencia laboral. Haz clic en el nombre de la empresa para ver más detalles.",
+    "list": [
+      {
+        "company": "Empresa A",
+        "role": "Desarrollador Full Stack",
+        "date": "Ene 2020 - Presente",
+        "description": "Trabajé en varios proyectos en la industria tecnológica...",
+        "responsibilities": "Lideré el desarrollo de funciones clave para varias aplicaciones web.",
+        "technologies": "JavaScript, React, Node.js, MongoDB"
+      },
+      {
+        "company": "Empresa B",
+        "role": "Desarrollador Backend",
+        "date": "Jun 2018 - Dic 2019",
+        "description": "Desarrollé microservicios y optimicé el rendimiento.",
+        "responsibilities": "Construí y mantuve APIs y servicios para aplicaciones a gran escala.",
+        "technologies": "Node.js, Express, Docker, PostgreSQL"
+      }
+    ]
+  },
+  "footer": {
+    "text": "©2024 por Portafolio. Orgullosamente creado con React."
+  },
+  "form": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar"
+  },
+  "error": {
+    "name": "El nombre es obligatorio",
+    "email": "El correo electrónico es obligatorio",
+    "emailFormat": "El correo electrónico no es válido",
+    "message": "El mensaje es obligatorio"
+  },
+  "project": {
+    "title": "Título",
+    "description": "Descripción",
+    "technologies": "Tecnologías",
+    "link": "Enlace",
+    "github": "Github"
+  },
+  "experienceDetail": {
+    "responsibilities": "Responsabilidades",
+    "technologies": "Tecnologías"
   }
 }
