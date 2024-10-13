@@ -1,14 +1,12 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 
-// Array de idiomas disponibles
 const LANGUAGES = [
     {code: 'en', labelKey: 'language.english', colorClass: 'bg-blue-500 hover:bg-blue-600'},
     {code: 'es', labelKey: 'language.spanish', colorClass: 'bg-green-500 hover:bg-green-600'},
     {code: 'ca', labelKey: 'language.catalan', colorClass: 'bg-red-500 hover:bg-red-600'}
 ];
 
-// Componente Button genérico
 const LanguageButton = ({code, label, colorClass, onClick}) => (
     <button
         onClick={() => onClick(code)}

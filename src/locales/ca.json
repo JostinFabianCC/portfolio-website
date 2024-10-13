@@ -1,11 +1,79 @@
 {
   "welcome": "Benvingut al meu portafoli",
-  "about": "Sobre mi",
-  "projects": "Projectes",
-  "contact": "Contacte",
+  "header": {
+    "greeting": "Hola, soc Jostin",
+    "description": "Desenvolupador Full Stack apassionat per crear aplicacions web increïbles.",
+    "imageAlt": "Imatge de capçalera del perfil"
+  },
   "language": {
     "english": "Anglès",
     "spanish": "Espanyol",
     "catalan": "Català"
+  },
+  "navbar": {
+    "about": "Sobre mi",
+    "projects": "Projectes",
+    "contact": "Contacte",
+    "experience": "Experiència"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description": "Soc un desenvolupador Full Stack apassionat per crear i desenvolupar aplicacions web. Tinc experiència tant en tecnologies de front-end com de back-end, i sempre busco aprendre coses noves. M'agrada treballar en equip i col·laborar amb altres per assolir un objectiu comú. Actualment estic buscant noves oportunitats per créixer i desenvolupar les meves habilitats."
+  },
+  "projects": {
+    "title": "Projectes",
+    "description": "Aquí hi ha alguns dels projectes en els quals he treballat. Fes clic al projecte per veure més detalls."
+  },
+  "contact": {
+    "title": "Contacte",
+    "description": "Si vols posar-te en contacte amb mi, omple el formulari a continuació i et respondré tan aviat com sigui possible."
+  },
+  "experience": {
+    "title": "Experiència",
+    "description": "Aquí tens un resum de la meva experiència laboral. Fes clic al nom de l'empresa per veure'n més detalls.",
+    "list": [
+      {
+        "company": "Empresa A",
+        "role": "Desenvolupador Full Stack",
+        "date": "Gen 2020 - Present",
+        "description": "Vaig treballar en diversos projectes a la indústria tecnològica...",
+        "responsibilities": "Vaig liderar el desenvolupament de funcions clau per a diverses aplicacions web.",
+        "technologies": "JavaScript, React, Node.js, MongoDB"
+      },
+      {
+        "company": "Empresa B",
+        "role": "Desenvolupador Backend",
+        "date": "Jun 2018 - Des 2019",
+        "description": "Vaig desenvolupar microserveis i vaig optimitzar el rendiment.",
+        "responsibilities": "Vaig construir i mantenir APIs i serveis per a aplicacions a gran escala.",
+        "technologies": "Node.js, Express, Docker, PostgreSQL"
+      }
+    ]
+  },
+  "footer": {
+    "text": "©2024 per Portafoli. Creat amb orgull amb React."
+  },
+  "form": {
+    "name": "Nom",
+    "email": "Correu electrònic",
+    "message": "Missatge",
+    "submit": "Enviar"
+  },
+  "error": {
+    "name": "El nom és obligatori",
+    "email": "El correu electrònic és obligatori",
+    "emailFormat": "El correu electrònic no és vàlid",
+    "message": "El missatge és obligatori"
+  },
+  "project": {
+    "title": "Títol",
+    "description": "Descripció",
+    "technologies": "Tecnologies",
+    "link": "Enllaç",
+    "github": "Github"
+  },
+  "experienceDetail": {
+    "responsibilities": "Responsabilitats",
+    "technologies": "Tecnologies"
   }
 }

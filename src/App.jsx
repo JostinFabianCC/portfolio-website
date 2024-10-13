@@ -1,17 +1,24 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import {useTranslation} from 'react-i18next';
-import LanguageSwitcher from './components/LanguageSwitcher.jsx';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import Experience from "./components/Experience.jsx";
 
 const App = () => {
-    const {t} = useTranslation();
-
-    return (<div className="p-8 bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold text-blue-600">{t('welcome')}</h1>
-            <div className="mt-6">
-                <LanguageSwitcher/>
-            </div>
-        </div>);
+    return (
+        <div className="min-h-screen flex flex-col">
+            <Navbar/>
+            <Header/>
+            <main className="flex-grow">
+                <AboutMe/>
+                <Projects/>
+                <Experience/>
+            </main>
+            <Footer/>
+        </div>
+    );
 };
 
 export default App;
