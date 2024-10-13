@@ -51,7 +51,8 @@
     ]
   },
   "footer": {
-    "text": "©2024 per Portafoli. Creat amb orgull amb React."
+    "text": "Gràcies per visitar el meu portafoli. Explora més dels meus projectes i connecta amb mi a les xarxes socials!",
+    "rights": "Tots els drets reservats."
   },
   "form": {
     "name": "Nom",

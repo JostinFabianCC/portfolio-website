@@ -51,7 +51,8 @@
     ]
   },
   "footer": {
-    "text": "©2024 by Portfolio. Proudly created with React."
+    "text": "Thank you for visiting my portfolio. Feel free to explore more of my projects and connect with me on social media!",
+    "rights": "All rights reserved."
   },
   "form": {
     "name": "Name",

@@ -51,7 +51,8 @@
     ]
   },
   "footer": {
-    "text": "©2024 por Portafolio. Orgullosamente creado con React."
+    "text": "Gracias por visitar mi portafolio. ¡Explora más de mis proyectos y conéctate conmigo en redes sociales!",
+    "rights": "Todos los derechos reservados."
   },
   "form": {
     "name": "Nombre",
