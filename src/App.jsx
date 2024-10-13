@@ -1,10 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
-import Experience from "./components/Experience.jsx";
+import Navbar from './components/layout/Navbar.jsx';
+import Header from './components/layout/Header.jsx';
+import AboutMe from './components/sections/AboutMe.jsx';
+import Projects from './components/sections/Projects.jsx';
+import Footer from './components/layout/Footer.jsx';
+import Experience from "./components/sections/Experience.jsx";
+import Contact from "./components/sections/Contact.jsx";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 <AboutMe/>
                 <Projects/>
                 <Experience/>
+                <Contact/>
             </main>
             <Footer/>
         </div>
