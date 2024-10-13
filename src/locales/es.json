@@ -31,7 +31,8 @@
       "name": "Tu Nombre",
       "email": "Tu Correo",
       "message": "Tu Mensaje",
-      "submit": "Enviar Mensaje"
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando..."
     },
     "error": {
       "name": "El nombre es obligatorio",

@@ -31,7 +31,8 @@
       "name": "El teu Nom",
       "email": "El teu Correu",
       "message": "El teu Missatge",
-      "submit": "Enviar Missatge"
+      "submit": "Enviar Missatge",
+      "sending": "Enviant..."
     },
     "error": {
       "name": "El nom és obligatori",
