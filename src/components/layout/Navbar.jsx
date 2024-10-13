@@ -1,7 +1,7 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import LanguageSwitcher from './LanguageSwitcher';
-import HamburgerMenu from './HamburgerMenu';
+import LanguageSwitcher from './LanguageSwitcher.jsx';
+import HamburgerMenu from './HamburgerMenu.jsx';
 
 const NAV_LINKS = [
     {href: '#about', labelKey: 'navbar.about'},

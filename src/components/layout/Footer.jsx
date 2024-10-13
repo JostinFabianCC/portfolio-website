@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {useTranslation} from 'react-i18next';
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from './LanguageSwitcher.jsx';
 
 // Componente para enlaces de redes sociales
 const SocialLink = ({href, icon, label}) => (
