@@ -25,8 +25,22 @@
     "description": "Aquí hi ha alguns dels projectes en els quals he treballat. Fes clic al projecte per veure més detalls."
   },
   "contact": {
-    "title": "Contacte",
-    "description": "Si vols posar-te en contacte amb mi, omple el formulari a continuació i et respondré tan aviat com sigui possible."
+    "heading": "Contacta'm",
+    "description": "No dubtis a contactar-me a través del formulari següent. Espero connectar amb tu!",
+    "form": {
+      "name": "El teu Nom",
+      "email": "El teu Correu",
+      "message": "El teu Missatge",
+      "submit": "Enviar Missatge"
+    },
+    "error": {
+      "name": "El nom és obligatori",
+      "email": "El correu electrònic és obligatori",
+      "emailFormat": "El correu electrònic no és vàlid",
+      "message": "El missatge és obligatori"
+    },
+    "successMessage": "El teu missatge s'ha enviat correctament!",
+    "errorMessage": "Hi ha hagut un error en enviar el teu missatge. Si us plau, torna-ho a provar més tard."
   },
   "experience": {
     "title": "Experiència",
@@ -53,18 +67,6 @@
   "footer": {
     "text": "Gràcies per visitar el meu portafoli. Explora més dels meus projectes i connecta amb mi a les xarxes socials!",
     "rights": "Tots els drets reservats."
-  },
-  "form": {
-    "name": "Nom",
-    "email": "Correu electrònic",
-    "message": "Missatge",
-    "submit": "Enviar"
-  },
-  "error": {
-    "name": "El nom és obligatori",
-    "email": "El correu electrònic és obligatori",
-    "emailFormat": "El correu electrònic no és vàlid",
-    "message": "El missatge és obligatori"
   },
   "project": {
     "title": "Títol",

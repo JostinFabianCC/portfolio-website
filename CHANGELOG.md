@@ -8,6 +8,11 @@ All significant changes made to this project will be documented here.
 
 ### What’s been added
 
+- **[feature/contact-page]**: Refactored the contact page by applying SOLID principles:
+    - Separated validation logic into `useFormValidation` hook.
+    - Moved form submission logic into `submitForm.js` for cleaner structure.
+    - Enhanced form validation and error handling with modular components.
+
 - **Professional Footer Component**:
     - **[feature/footer]** Implemented a fully responsive footer for the portfolio.
     - Modularized the social media links into the `SocialLink` component.
