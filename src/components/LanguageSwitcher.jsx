@@ -16,7 +16,7 @@ const LanguageButton = ({code, label, colorClass, onClick}) => (
     </button>
 );
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({isMobile = false}) => {
     const {t, i18n} = useTranslation();
 
     const handleChangeLanguage = (languageCode) => {
@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="flex space-x-4 mt-4">
+        <div className={`flex ${isMobile ? 'flex-col space-y-2' : 'space-x-4 mt-4'}`}>
             {LANGUAGES.map((lang) => (
                 <LanguageButton
                     key={lang.code}
