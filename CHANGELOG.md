@@ -42,9 +42,19 @@ All significant changes made to this project will be documented here.
 
 ### What’s been changed
 
-- Improved the user experience across all devices by ensuring consistency in navigation and multi-language
-  functionality.
-- Enhanced code quality with better structure, modular components, and clean code practices.
+- **[feature/reorganize-structure]**: Reorganized project structure for better scalability and maintainability.
+    - Moved layout components (`Navbar`, `Footer`, `Header`, etc.) into `components/layout`.
+    - Grouped main sections of the site (`AboutMe`, `Projects`, etc.) into `components/sections`.
+    - Created `components/common` for reusable components like `ProjectCard`.
+    - Moved `i18n` configuration and language files into a dedicated `i18n` folder.
+    - Added a `hooks` folder for custom hooks to encourage better code organization as the project grows.
+    - Kept utility functions in `utils`.
+    - Updated all imports across the project to reflect the new structure.
+
+- **Clean Code Refactor for Navbar**:
+    - Improved the user experience across all devices by ensuring consistency in navigation and multi-language
+      functionality.
+    - Enhanced code quality with better structure, modular components, and clean code practices.
 
 ### Future improvements
 
