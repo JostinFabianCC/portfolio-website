@@ -1,4 +1,3 @@
-// src/components/Projects.jsx
 import React from 'react';
 import {loadImage} from '../../utils/loadImage.js';
 import ProjectCard from '../common/ProjectCard.jsx';
