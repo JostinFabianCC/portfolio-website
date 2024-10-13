@@ -2,6 +2,7 @@ import React from 'react';
 import {useTranslation} from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher.jsx';
 import HamburgerMenu from './HamburgerMenu.jsx';
+import ThemeSwitcher from './ThemeSwitcher.jsx';
 
 const NAV_LINKS = [
     {href: '#about', labelKey: 'navbar.about'},
@@ -38,15 +39,15 @@ const Navbar = () => {
 
     return (
         <nav
-            className="sticky top-0 z-50 flex justify-between items-center p-4 bg-gray-900 text-white shadow-lg"
+            className="sticky top-0 z-50 flex justify-between items-center p-4 bg-gray-900 dark:bg-gray-800 text-white shadow-lg"
             aria-label={t('navbar.navigation')}
         >
             <NavigationLinks/>
 
-            <HamburgerMenu/>
-
-            <div className="hidden md:flex">
+            <div className="flex items-center space-x-4">
+                <ThemeSwitcher/>
                 <LanguageSwitcher/>
+                <HamburgerMenu/>
             </div>
         </nav>
     );
