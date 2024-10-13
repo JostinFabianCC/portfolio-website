@@ -8,6 +8,13 @@ All significant changes made to this project will be documented here.
 
 ### What’s been added
 
+- **Professional Footer Component**:
+    - **[feature/footer]** Implemented a fully responsive footer for the portfolio.
+    - Modularized the social media links into the `SocialLink` component.
+    - Enhanced accessibility by adding `aria-labels` to social media links.
+    - Integrated the `LanguageSwitcher` component in a more structured layout for better user experience.
+    - Included copyright information dynamically based on the current year.
+
 - **Hamburger Menu for Mobile Devices**:
     - **[feature/hamburger-menu]** Implemented a responsive hamburger menu for mobile devices.
     - The hamburger menu smoothly toggles open/close with a modern transition effect.
@@ -88,4 +95,4 @@ All significant changes made to this project will be documented here.
     - Ensured the **language switcher** is available across all pages for a consistent user experience.
     - Applied Tailwind CSS to style the entire layout, ensuring responsiveness and clean design across devices.
 
----
+---**
