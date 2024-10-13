@@ -8,6 +8,24 @@ All significant changes made to this project will be documented here.
 
 ### What’s been added
 
+- **Hamburger Menu for Mobile Devices**:
+    - **[feature/hamburger-menu]** Implemented a responsive hamburger menu for mobile devices.
+    - The hamburger menu smoothly toggles open/close with a modern transition effect.
+    - A semi-transparent background is applied to the menu for enhanced design on mobile screens.
+    - Links inside the hamburger menu close the menu automatically when clicked, improving user experience.
+    - Added `aria-expanded` attributes to improve accessibility for screen readers and provide a more inclusive
+      experience.
+    - Integrated the `LanguageSwitcher` inside the hamburger menu to maintain multi-language support on mobile devices.
+
+- **Clean Code Refactor for Navbar**:
+    - Refactored the `Navbar.jsx` component to follow clean code principles.
+    - **Extracted `NavLink` and `NavigationLinks` components** to simplify and modularize the code, enhancing
+      readability and maintainability.
+    - Centralized the navigation link structure in the `NAV_LINKS` array, reducing duplication and making future changes
+      easier.
+    - The overall structure of the navigation system is now more scalable and easier to update.
+
+
 - **Sticky, accessible, and responsive navbar**:
     - Implemented a sticky navbar that remains fixed at the top of the page while the user scrolls (
       `feature/sticky-navbar`).
@@ -15,10 +33,16 @@ All significant changes made to this project will be documented here.
     - Enhanced visual appeal by adding smooth hover transitions and a shadow effect to the navbar.
     - Ensured the navbar is fully responsive across all devices, providing a consistent user experience.
 
+### What’s been changed
+
+- Improved the user experience across all devices by ensuring consistency in navigation and multi-language
+  functionality.
+- Enhanced code quality with better structure, modular components, and clean code practices.
+
 ### Future improvements
 
-- Continue improving the design and user experience by adding **animations** and enhancing **accessibility**.
-- Add more sections to the portfolio, such as **Experience** and **Contact**, to expand its content.
+- Continue to improve the user interface with additional **animations** and further enhance **accessibility** features.
+- Plan to introduce more advanced sections, such as **Experience** and **Contact**, with enhanced content and design.
 
 ---
 
@@ -56,10 +80,12 @@ All significant changes made to this project will be documented here.
 - **Testing and validation**:
     - Thoroughly tested the integration of Tailwind CSS and the language switcher on the main page. All styles and
       functionality were confirmed to work correctly across all supported languages.
-    -
+
 - **Home layout and navigation** (`feature/home-layout-and-navigation`):
     - Added a fully responsive **home page layout** with a dynamic **header** that includes a placeholder image.
     - Integrated **dynamic text translation** in the header using `react-i18next` for multilingual support.
     - Created a modular and scalable navigation bar that works across the entire site.
     - Ensured the **language switcher** is available across all pages for a consistent user experience.
     - Applied Tailwind CSS to style the entire layout, ensuring responsiveness and clean design across devices.
+
+---
