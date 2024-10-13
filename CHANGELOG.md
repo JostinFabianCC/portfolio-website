@@ -4,7 +4,25 @@ All significant changes made to this project will be documented here.
 
 ## [Unreleased]
 
-## [v1.0.0-Sprint1] - 12th October 2024
+## [v1.1.0-Sprint2] - 13th October 2024
+
+### What’s been added
+
+- **Sticky, accessible, and responsive navbar**:
+    - Implemented a sticky navbar that remains fixed at the top of the page while the user scrolls (
+      `feature/sticky-navbar`).
+    - Improved accessibility by adding `aria-label` attributes for better navigation with screen readers.
+    - Enhanced visual appeal by adding smooth hover transitions and a shadow effect to the navbar.
+    - Ensured the navbar is fully responsive across all devices, providing a consistent user experience.
+
+### Future improvements
+
+- Continue improving the design and user experience by adding **animations** and enhancing **accessibility**.
+- Add more sections to the portfolio, such as **Experience** and **Contact**, to expand its content.
+
+---
+
+## [v1.0.0] - 12th October 2024
 
 ### What’s been added
 
@@ -45,9 +63,3 @@ All significant changes made to this project will be documented here.
     - Created a modular and scalable navigation bar that works across the entire site.
     - Ensured the **language switcher** is available across all pages for a consistent user experience.
     - Applied Tailwind CSS to style the entire layout, ensuring responsiveness and clean design across devices.
-
-### Future improvements
-
-- Add new sections, such as **About Me**, **Projects**, and **Experience**, to make the portfolio more comprehensive.
-- Improve accessibility and introduce subtle animations to enhance the user experience and make the site feel more
-  polished.
