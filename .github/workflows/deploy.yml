@@ -14,56 +14,50 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
 
     steps:
-      - name: Checkout code
+      - name: 🧾 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: 🟢 Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: '20'
+          cache: 'npm'
 
-      # Limpiar caché de npm y de Vite antes de construir
-      - name: Clean npm cache
-        run: npm cache clean --force
+      - name: 🧹 Clean caches and dist folder
+        run: |
+          npm cache clean --force
+          rm -rf node_modules dist .vite
 
-      - name: Clean vite cache
-        run: npm run cache:clear
+      - name: 📦 Install dependencies
+        run: npm ci
 
-      - name: Clean previous build
-        run: npm run clean || rm -rf ./dist
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build with Vite
+      - name: ⚙️ Build project
         run: npm run build
 
-      # Verificar contenido del CSS generado (opcional)
-      - name: Check generated CSS
-        run: cat ./dist/assets/*.css || echo "No CSS file found"
-
-      - name: Upload build artifacts
+      - name: 📁 Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
   deploy:
-    environment:
-      name: github-pages-${{ github.ref_name }}
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
