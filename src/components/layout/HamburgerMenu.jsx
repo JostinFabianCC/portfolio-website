@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher.jsx';
+import ThemeSwitcher from './ThemeSwitcher.jsx';
 
 const HamburgerMenu = () => {
     const {t} = useTranslation();
@@ -85,7 +86,8 @@ const HamburgerMenu = () => {
                         </li>
                     </ul>
 
-                    <div className="mt-6">
+                    <div className="mt-6 flex justify-center space-x-4">
+                        <ThemeSwitcher/>
                         <LanguageSwitcher isMobile={true}/>
                     </div>
                 </div>

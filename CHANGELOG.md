@@ -8,10 +8,24 @@ All significant changes made to this project will be documented here.
 
 ### What’s been added
 
-- **[feature/contact-page]**: Refactored the contact page by applying SOLID principles:
-    - Separated validation logic into `useFormValidation` hook.
-    - Moved form submission logic into `submitForm.js` for cleaner structure.
-    - Enhanced form validation and error handling with modular components.
+- **Contact Page Usability, Accessibility, and Design Improvements**:
+    - **[feature/contact-page]** Enhanced the Contact page by improving usability, accessibility, and design:
+        - **Accessibility improvements**:
+            - Added `<label>` elements for form fields to improve screen reader support.
+            - Implemented `aria-invalid` and `aria-describedby` attributes for better error feedback.
+            - Introduced `role="alert"` and `role="status"` to ensure screen readers announce validation errors and form
+              submission statuses.
+        - **Usability improvements**:
+            - Disabled the submit button during form submission, with a loading state (`Sending...`).
+            - Improved focus outlines for better keyboard navigation, making input fields more intuitive.
+            - Provided clear, real-time error messages when validation fails.
+        - **Design improvements**:
+            - Enhanced the overall design by refining spacing, alignment, and transition effects for input fields and
+              buttons.
+            - Added smooth transitions for hover and focus states to create a more engaging and user-friendly interface.
+        - **Translation updates**:
+            - Updated the translation files (`en.json`, `es.json`, `ca.json`) to include new messages for form
+              submission statuses and validation errors.
 
 - **Professional Footer Component**:
     - **[feature/footer]** Implemented a fully responsive footer for the portfolio.

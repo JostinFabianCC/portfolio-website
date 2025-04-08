@@ -6,9 +6,9 @@
     "imageAlt": "Imatge de capçalera del perfil"
   },
   "language": {
-    "english": "Anglès",
-    "spanish": "Espanyol",
-    "catalan": "Català"
+    "english": "Anglès (Global)",
+    "spanish": "Espanyol (Espanya)",
+    "catalan": "Català (Catalunya)"
   },
   "navbar": {
     "about": "Sobre mi",

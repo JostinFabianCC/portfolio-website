@@ -6,7 +6,6 @@ import {useTranslation} from 'react-i18next';
 const Contact = () => {
     const {t} = useTranslation();
 
-    // Hook personalizado para manejar el estado del formulario y la validación
     const {
         formData,
         formErrors,
@@ -20,8 +19,8 @@ const Contact = () => {
         message: '',
     });
 
-    const [formStatus, setFormStatus] = useState(null); // 'success', 'error'
-    const [isSubmitting, setIsSubmitting] = useState(false); // Indicador de envío
+    const [formStatus, setFormStatus] = useState(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -38,7 +37,7 @@ const Contact = () => {
             await submitForm(formData);
             setFormStatus('success');
             setFormErrors({});
-            setFormData({name: '', email: '', message: ''}); // Reset form
+            setFormData({name: '', email: '', message: ''});
         } catch (error) {
             setFormStatus('error');
         } finally {
@@ -47,7 +46,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="py-12 px-4 bg-gray-100 text-gray-900">
+        <section id="contact" className="py-12 px-4 bg-gray-100 text-gray-900">
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-4">{t('contact.heading')}</h2>
                 <p className="mb-8">{t('contact.description')}</p>
